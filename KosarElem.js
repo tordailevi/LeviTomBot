@@ -22,8 +22,6 @@ export default class KosarElem {
         `;
         szuloElem.insertAdjacentHTML("beforeend", html);
 
-
-        
         const torolGomb = szuloElem.querySelector(".kosar-elem:last-child .torol");
         torolGomb.addEventListener("click", () => {
             const esemeny = new CustomEvent("torol", {

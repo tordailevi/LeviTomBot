@@ -1,9 +1,6 @@
-import Kosar from "./Kosar.js";
-
 export default class Cipo {
     #cipoObj;
     #szuloElem;
-    #kepElem;
     #hozzaadElem;
 
     constructor(cipoObj, szuloElem) {

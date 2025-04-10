@@ -6,6 +6,8 @@ export default class Kosar {
 
     constructor(szuloElem) {
         this.#szuloElem = szuloElem;
+        this.hozzaad();
+        this.torol();
         this.megjelenit();
     }
 
@@ -16,14 +18,12 @@ export default class Kosar {
         });
     }
 
-
     hozzaad() {
         window.addEventListener("hozzaad", (event) => {
             this.#kosarLista.push(event.detail);
             this.megjelenit();
         });
     }
-
 
     megjelenit() {
         this.#szuloElem.innerHTML = "";
