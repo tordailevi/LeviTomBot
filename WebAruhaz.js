@@ -24,6 +24,6 @@ export default class WebAruhaz {
     }
 
     atpakol() {
-        // Későbbi kiegészítéshez, pl. kosár újrarajzolás
+        
     }
 }
