@@ -1,14 +1,11 @@
+import KosarElem from "./KosarElem.js";
+
 export default class Kosar {
     #kosarLista = [];
     #szuloElem;
 
     constructor(szuloElem) {
         this.#szuloElem = szuloElem;
-
-       
-
-        
-
         this.megjelenit();
     }
 

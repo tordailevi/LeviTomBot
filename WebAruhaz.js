@@ -1,3 +1,5 @@
+import Cipo from "./Cipo.js";
+
 export default class WebAruhaz {
     #lista = [];
     #kosarElem;
@@ -24,6 +26,6 @@ export default class WebAruhaz {
     }
 
     atpakol() {
-        // Későbbi kiegészítéshez, pl. kosár újrarajzolás
+        
     }
 }
