@@ -12,16 +12,19 @@ export default class Cipo {
     megjelenit() {
         const { nev, ar, kep } = this.#cipoObj;
         const html = `
-            <div class="cipo">
-                <img src="${kep}" alt="${nev}">
-                <h3>${nev}</h3>
-                <p>${ar} Ft</p>
-                <button class="hozzaad">Kosárba</button>
+            <div id="cipo" class="card" style="width: 18rem;">
+            <img class="card-img-top" src="${kep}" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">${nev}</h5>
+                <p class="card-text">${ar}</p>
+                
             </div>
-        `;
+            <button class="hozzaad">Kosárba</button>
+            </div>
+            `;
         this.#szuloElem.insertAdjacentHTML("beforeend", html);
 
-        this.#hozzaadElem = this.#szuloElem.querySelector(".cipo:last-child .hozzaad");
+        this.#hozzaadElem = this.#szuloElem.querySelector("#cipo:last-child .hozzaad");
         this.#hozzaadElem.addEventListener("click", () => {
             this.hozzaad();
         });
