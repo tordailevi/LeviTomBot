@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script></script>
+    <script type="module" src="main.js"></script>
     <link rel="stylesheet" href="stilistikus.css">
     <title>Levi, Boti, Tomi</title>
 </head>
 <body>
     <header>
-        <div class="termek"></div>
-        <div class="kosar"></div>
+        <div class="termek">Webáruház:</div>
+        <div class="kosar">Kosár:  <span id="kosar-db">0</span></div>
     </header>
-    <main> 
-        <article> </article>
-        <aside> </aside>
+    <main id="webalap"> 
+        <article id="termekek"> </article>
+        <aside id="kosar"> 
+            <h3>Kosár tartalma:</h3>
+            <div id="kosar-tartalma"></div>
+        </aside>
     </main>
 </body>
 </html>

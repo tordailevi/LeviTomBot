@@ -7,7 +7,7 @@ export default class KosarElem {
     constructor(cipo, szuloElem, index) {
         this.#nev = cipo.nev;
         this.#ar = cipo.ar;
-        this.#meret = cipo.meret || 42; // Alapértelmezett méret
+        this.#meret = cipo.meret || 42;
         this.#index = index;
 
         this.megjelenit(szuloElem);
