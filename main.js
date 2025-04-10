@@ -1,10 +1,14 @@
-import WebAruhaz from "./WebAruhaz.js";
 import Web_cipoLista from "./Web_cipoLista.js";
+import WebAruhaz from "./WebAruhaz.js";
 
-const szuloElem = document.querySelector("#app");
+
+const webAlapElem = document.querySelector("#webalap");
+const termekekElem = document.querySelector("#termekek");
+const kosarElem = document.querySelector("#kosar");
+
+
 const cipoListaObj = new Web_cipoLista();
 const lista = cipoListaObj.getLista();
 
-const webaruhaz = new WebAruhaz(szuloElem,lista);
-webaruhaz.termekMegjelenit();
-webaruhaz.kosarMegjelenit();
+
+const webaruhaz = new WebAruhaz(webAlapElem, lista);
