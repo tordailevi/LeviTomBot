@@ -12,7 +12,7 @@ export default class Cipo {
     megjelenit() {
         const { nev, ar, kep } = this.#cipoObj;
         const html = `
-            <div id="cipo" class="card" style="width: 18rem;">
+            <div id="cipo" class="card" style="width: 16rem;">
             <img class="card-img-top" src="${kep}" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">${nev}</h5>

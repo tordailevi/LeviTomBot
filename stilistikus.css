@@ -4,10 +4,36 @@
 
 body{
     margin: auto;
-    background-color: ;
+}
+
+main{
+    background-color: #845ec2;
 }
 
 #termekek{
     display: grid;
     grid-template-columns:1fr 1fr 1fr;
+    gap: 10px;
+}
+
+header{
+    grid-template-columns: 1fr 1fr;
+}
+
+#cipo{
+    background-color: #d65db1;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+}
+
+.hozzaad{
+    background-color: #ff6f91;
+}
+
+header{
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    text-shadow: 0 0 2px white -2 -2 -2px white
 }
