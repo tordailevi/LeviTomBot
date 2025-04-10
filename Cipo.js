@@ -1,3 +1,5 @@
+import Kosar from "./Kosar.js";
+
 export default class Cipo {
     #cipoObj;
     #szuloElem;

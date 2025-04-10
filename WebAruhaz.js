@@ -1,3 +1,5 @@
+import Cipo from "./Cipo.js";
+
 export default class WebAruhaz {
     #lista = [];
     #kosarElem;
