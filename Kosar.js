@@ -5,18 +5,28 @@ export default class Kosar {
     constructor(szuloElem) {
         this.#szuloElem = szuloElem;
 
-        window.addEventListener("hozzaad", (event) => {
-            this.#kosarLista.push(event.detail);
-            this.megjelenit();
-        });
+       
 
+        
+
+        this.megjelenit();
+    }
+
+    torol() {
         window.addEventListener("torol", (event) => {
             this.#kosarLista.splice(event.detail, 1);
             this.megjelenit();
         });
-
-        this.megjelenit();
     }
+
+
+    hozzaad() {
+        window.addEventListener("hozzaad", (event) => {
+            this.#kosarLista.push(event.detail);
+            this.megjelenit();
+        });
+    }
+
 
     megjelenit() {
         this.#szuloElem.innerHTML = "";
